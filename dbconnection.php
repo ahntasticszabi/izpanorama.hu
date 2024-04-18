@@ -2,7 +2,7 @@
 
     $server = "localhost";
     $user = "root";
-    $dbpw = "12345678";
+    $dbpw = "";
     $db = "izpanorama";
 
     $adb = mysqli_connect($server, $user, $dbpw, $db);
