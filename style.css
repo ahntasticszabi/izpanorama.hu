@@ -1,0 +1,1012 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to left, #E8F8FF , #FFDDF4);
+}
+
+@font-face {
+    font-family: Merova;
+    src: url(Merovademo-gxa65.otf);
+}
+
+.fixed-top {
+    background-color: white;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.container {
+    background-color: white;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    padding: 0;
+    background-color: initial;
+}
+
+header .navbar-collapse {
+    align-self: flex-end;
+    line-height: 1.5em;
+}
+
+.nav-item {
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+.navbar-brand i {
+    font-style: normal;
+    color: #7C68ED;
+    font-family: Merova;
+    font-size: 1.6em;
+}
+
+header .navbar .dropdown-menu {
+    color: #383838;
+    min-width: 200px;
+    font-size: 1em;
+    max-height: calc(100vh - 3.5em);
+    overflow: auto;
+    overflow-x: hidden;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 0;
+    word-wrap: unset;
+}
+
+header .navbar .dropdown-menu .dropdown-item {
+    text-transform: none;
+    padding: 0.25rem 1rem;
+    line-height: 1.5em;
+    border-radius: 0;
+}
+
+header .navbar .dropdown-menu .dropdown-item i {
+    margin-right: 0.25rem;
+    color: #7C68ED;
+    width: 25px;
+    text-align: center;
+}
+
+header .navbar .dropdown-menu .dropdown-header aside {
+    font-weight: 400;
+    margin-top: 0.35rem;
+    font-size: .85em;
+    color: #ccc;
+}
+
+.profile-pic{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+ 
+.profile-pic img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+ }
+
+.profile-menu .dropdown-menu {
+    right: 0;
+    left: unset;
+}
+
+.profile-menu .fa-fw {
+    margin-right: 10px;
+}
+ 
+.toggle-change::after {
+    border-top: 0;
+    border-bottom: 0.3em solid;
+}
+  
+/* Navigációs bar */
+#nav-container ul {
+    list-style-type : none;
+    margin          : 10px;
+    padding         : 2;
+    overflow        : hidden;
+    background-color: #CCFFFF;
+    border-radius   : 20px;
+    box-shadow      : 2px 2px 2px #000000;
+    border: solid 1px #000000;
+}
+
+#nav-container li {
+    float           : left;
+}
+
+#nav-container li a {
+    display         : block;
+    color           : black;
+    text-align      : center;
+    padding         : 14px 16px;
+    text-decoration : none;
+    font-style      : italic;
+    font-family     : monospace;
+    font-size       : 20px;
+}
+
+#nav-container li a.logo  {
+    display         : block;
+    color           : black;
+    text-align      : center;
+    padding         : 14px 16px;
+    text-decoration : none;
+    font-style      : normal;
+    font-family     : Merova;
+    font-size       : 20px;
+}
+
+#nav-container li:not(.active) {
+    padding         : 7.5px;
+}
+
+#nav-container li:hover:not(.active) {
+    background-color: #7C68ED;
+    font-weight     : bold;
+    color           : white;
+}
+
+#nav-container li a:hover:not(.active) {
+    font-weight     : bold;
+    color           : white;
+}
+
+#nav-container .active {
+    background-color: #7C68ED;
+    float           : right;
+    text-align      : center;
+}
+
+#nav-container .active a {
+    color           : white;
+    font-weight     : bold;
+  }
+
+#nav-container .active img {
+    width           :   45px;
+    height          :   45px;
+    border          :   1px solid black;
+    border-radius   :   50px; 
+}
+
+/* Regisztráció - Bejelentkezés */
+.logreg_box {
+    margin          : 100px auto;
+    border          : solid 1px rgb(0, 0, 0)          ;
+    border-radius   : 20px              ;
+    background-image: linear-gradient(to right, #7C68ED, #CCFFFF);
+    xbox-shadow     : 4px 4px 4px #AAA;
+    box-shadow      : .125rem .25rem rgba(0,0,0,.075)!important;
+    padding         : 10px;
+    line-height     : 30px;
+    width           : 40%;
+}
+
+.logreg_box h1 {
+    font-family     : arial;
+    font-size       : 30px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+}
+
+.logreg_box h3 {
+    font-family     : arial;
+    font-size       : 20px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+}
+
+.logreg_box form h3 {
+    font-family     : arial;
+    font-size       : 20px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+    font-style      : italic;
+}
+
+.logreg_box img {
+    vertical-align:baseline;
+}
+
+.logreg_box input {
+    width           : 30%;
+}
+
+.logreg_box input[type=email] {
+    width           : 55%;
+    padding         : 8px 10px;
+    margin          : 5px 0;
+    box-sizing      : border-box;
+    outline         : none;
+}
+
+.logreg_box input[type=email]:focus {
+    background-color: rgb(212, 244, 255);
+}
+
+.logreg_box input[type=text] {
+    width           : 55%;
+    padding         : 8px 10px;
+    margin          : 5px 0;
+    box-sizing      : border-box;
+    outline         : none;
+}
+
+.logreg_box input[type=text]:focus {
+    background-color: rgb(212, 244, 255);
+}
+
+.logreg_box input[type=password] {
+    width           : 55%;
+    padding         : 8px 10px;
+    margin          : 5px 0;
+    box-sizing      : border-box;
+    outline         : none;
+}
+
+/* Profil felület */
+.profile_box {
+    margin          : 100px auto;
+    border          : solid 1px rgb(0, 0, 0);
+    border-radius   : 20px;
+    background-image: linear-gradient(to right, #7C68ED, #CCFFFF);
+    xbox-shadow      : 4px 4px 4px #AAA;
+    box-shadow      : .125rem .25rem rgba(0,0,0,.075)!important;
+    padding         : 10px;
+    line-height     : 30px;
+    width           : 40%;
+}
+
+.profile_box h1 {
+    font-family     : arial;
+    font-size       : 30px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+}
+
+.profile_box h3 {
+    font-family     : arial;
+    font-size       : 20px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+}
+
+.profile_box a {
+    text-decoration : none;
+    color           : white;
+    font-family     : arial;
+    font-weight     : bold;
+    font-size       : 18px;
+}
+
+.profile_box a:hover {
+    color           : purple;
+}
+
+.profile_box input {
+    width           : 55%;
+    padding         : 8px 10px;
+    margin          : 5px 0;
+    box-sizing      : border-box;
+    outline         : none;
+}
+
+.profile_box input:focus {
+    background-color: rgb(206, 243, 255);
+}
+
+.profile-button {
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, #CCFFFF 0, #7C68ED 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 45px;
+    justify-content: center;
+    line-height: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+/* Profilkép változtatás */
+.profpicchange_box {
+    margin          : 100px auto;
+    border          : solid 1px rgb(0, 0, 0)          ;
+    border-radius   : 20px              ;
+    background-image: linear-gradient(to right, #7C68ED, #CCFFFF);
+    box-shadow      : .125rem .25rem rgba(0,0,0,.075)!important;
+    padding         : 10px;
+    line-height     : 30px;
+    width           : 40%;
+}
+
+.profpicchange_box h1 {
+    font-family     : arial;
+    font-size       : 30px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+}
+
+.profpicchange_box p {
+    font-family     : arial;
+    font-size       : 22px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+}
+
+.profpicchange_box form h3 {
+    font-family     : arial;
+    font-size       : 20px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+    font-style      : italic;
+}
+
+.profpicchange_box img {
+    width           : 40%;
+    border-radius   : 50%;
+}
+
+.profpicchange_box form p {
+    background-color: #6336aa;
+    border          : none;
+    border-radius   : 15px;
+    box-shadow      : 2px 2px 2px black;
+    color           : white;
+    padding         : 10px 32px;
+    text-align      : center;
+    text-decoration : none;
+    display         : inline-block;
+    font-size       : 16px;
+    font-weight     : bold;
+    margin          : 4px 2px;
+    cursor          : pointer;
+}
+
+.profpicchange_box input {
+    width           : 30%;
+}
+
+.profpicchange_box input[type=text] {
+    width           : 55%;
+    padding         : 8px 10px;
+    margin          : 5px 0;
+    box-sizing      : border-box;
+    outline         : none;
+}
+
+.profpicchange_box input[type=text]:focus {
+    background-color: rgb(212, 244, 255);
+}
+
+.profpicchange_box input[type=password] {
+    width           : 55%;
+    padding         : 8px 10px;
+    margin          : 5px 0;
+    box-sizing      : border-box;
+    outline         : none;
+}
+
+/* Adminpanel */
+.adminpanel {
+    margin          : 24px;
+    background-image: linear-gradient(to right, #7C68ED, #CCFFFF);
+    border          : solid 2px #448;
+    border-radius   : 12px;
+    box-shadow      : .150rem .50rem rgba(0, 0, 0, 0.214)!important;
+    font-family     : Verdana;
+}
+
+.left {
+    width           : 200px;
+    height          : 380px;
+    float           : left;
+    margin-top      : 0;
+    padding         : 24px 0 48px 0;
+    text-align      : center;
+}
+
+.left input {
+    display         : block;
+    text-decoration : none;
+    border          : solid 1px #224;
+    border-radius   : 8px;
+    margin          : 8px 24px;
+    padding         : 8px;
+    background-color: #ffffff;
+    color           : rgb(0, 0, 0);
+    font-size       : 14px;
+    font-weight     : bold;
+}
+
+.right {
+    width           : 70%;
+    min-height      : 420px;
+    margin-left     : 248px;
+    padding         : 32px;
+    line-height     : 18px;
+    font-size       : 13px;
+    text-align      : justify;
+}
+
+.right h1 {
+    font-family     : arial;
+    font-size       : 60px;
+    color           : #ffffff;
+    text-shadow     : 2px 2px 2px rgb(0, 0, 0);
+    font-weight     : bold;
+    text-align      : center;
+}
+
+/* Galléria */
+.gallery-container {
+    background-color: rgb(255, 255, 255);
+    width           : 85%;
+    padding-right   : 15px;
+    padding-left    : 15px;
+    padding-top     : 15px;
+    padding-bottom  : 15px;
+    margin-right    : auto;
+    margin-left     : auto;
+    box-shadow      : .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.gallery {
+    border: 1px solid #ccc;
+    padding: 0 4px;
+    float: left;
+    background-color: aliceblue;
+    box-shadow: .125rem .25rem rgba(0,0,0,.075)!important;
+}
+  
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+    margin: 5px;
+}
+
+.gallery p {
+    margin-bottom: 0;
+    word-break: break-word;
+    margin: 0;
+    padding: 0;
+}
+
+/* Poszt feltöltés */
+.post {
+    margin          : 100px auto;
+    border          : solid 1px rgb(0, 0, 0)          ;
+    border-radius   : 20px              ;
+    xbackground-image: radial-gradient(100% 100% at 100% 0, #CCFFFF 0, #7C68ED 100%);
+    background-image: linear-gradient(to right, #7C68ED, #CCFFFF);
+    box-shadow      : .125rem .25rem rgba(0,0,0,.075)!important;
+    padding         : 10px;
+    line-height     : 30px;
+    width           : 40%;
+}
+
+.post h1 {
+    font-family     : arial;
+    font-size       : 30px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+}
+
+.post h3 {
+    font-family     : arial;
+    font-size       : 20px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+}
+
+.post form h3 {
+    font-family     : arial;
+    font-size       : 20px;
+    color           : honeydew;
+    text-shadow     : 2px 2px 2px black;
+    font-weight     : bold;
+    font-style      : italic;
+}
+  
+.post p {
+    background-color: #7C68ED;
+    border-radius   : 15px;
+    border          : solid 1px rgb(0, 0, 0);
+    box-shadow      : .125rem .25rem rgba(0, 0, 0, 0.264)!important;
+    color           : white;
+    padding         : 10px 32px;
+    text-align      : center;
+    text-decoration : none;
+    display         : inline-block;
+    font-size       : 16px;
+    font-weight     : bold;
+    margin          : 4px 2px;
+    cursor          : pointer;
+}
+
+.post img {
+    width           : 40%;
+}
+
+.post input[type=text] {
+    width           : 80%;
+    padding         : 3px 3px;
+    margin          : 7px;
+    box-sizing      : border-box;
+    outline         : none;
+}
+
+.post textarea {
+    width           : 80%;
+    padding         : 4px 4px;
+    margin          : 7px;
+    box-sizing      : border-box;
+    outline         : none;
+}
+
+.post input[type=text]:focus {
+    background-color: rgb(212, 244, 255);
+}
+
+.post input {
+    width           : 30%;
+}
+
+/* Poszt oldala */
+.post-container {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    xbox-shadow: 2px 2px 2px black;
+    box-shadow: .125rem .25rem rgba(0,0,0,.075)!important;
+    line-height: 1.7em;
+    padding: 15px;
+}
+
+.post-picture img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Felhasználó felülete */
+.content-snippet {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.content-snippet section {
+    flex: 1 0 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.content-snippet section aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ccc;
+    white-space: nowrap;
+}
+
+/* Kommentek felülete */
+.comments {
+    display: grid;
+    grid-template:
+        "avatar-area user-area user-area user-area flag-area"
+        "avatar-area date-area date-area date-area flag-area"
+        ". content-area content-area content-area like-area"
+        ". nested-area nested-area nested-area nested-area"/minmax(0,auto) minmax(100px,1fr) minmax(0,auto) minmax(0,auto) 50px;
+    grid-template-rows: auto 1fr;
+    grid-gap: 0 5px;
+    margin-top: 1.0rem;
+    align-items: center;
+}
+
+.comments .comments-avatar {
+    grid-area: avatar-area;
+    width: 3em;
+    max-width: 100%;
+}
+
+.comments .comments-avatar figure {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.comments .comments-avatar figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    background-color: #f0f0f0;
+}
+
+.comments .comments-name {
+    grid-area: user-area;
+    font-size: .85em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.comments .comments-date {
+    grid-area: date-area;
+    font-size: .75em;
+    color: #889aab;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.comments .comments-text {
+    grid-area: content-area;
+    margin-bottom: 0;
+    background-color: #fff;
+    word-break: break-word;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fórum */ 
+.header-container {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    box-shadow: .130rem .30rem rgba(0,0,0,.075)!important;
+    line-height: 1.7em;
+    padding: 20px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forum-container {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    box-shadow: .130rem .30rem rgba(0,0,0,.075)!important;
+    line-height: 1.7em;
+    padding: 20px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.forum-container a{
+    color:#7C68ED;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.forum-container h1{
+    font-size   :   20px;
+    font-weight :   bolder;
+}
+
+.button {
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #CCFFFF 0, #7C68ED 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 60px;
+  justify-content: center;
+  line-height: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+/* ########################################### */
+/*           Forums.html                       */
+/* ########################################### */
+
+.subforum{
+    margin-top:20px;
+}
+
+.subforum-title{
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    background-image: radial-gradient(100% 100% at 100% 0, #CCFFFF 0, #7C68ED 100%);
+    border: 0px solid #000000;
+    padding: 5px;
+    border-radius: 5px;
+    margin:4px;
+}
+
+.subforum-row{
+    display: grid;
+    grid-template-columns: 67% 13% 20%;
+}
+
+.subforum-rules-row{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.subforum-column{
+    padding: 10px;
+    margin:4px;
+    border-radius: 5px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    background-color: #CCFFFF;
+    border: 0px solid #000000;
+    color: #000000;
+}
+
+.subforum-description *{
+    margin-block: 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum-devider{
+    display: none;   
+}
+
+/*   Header Section    */
+
+
+@font-face {
+    font-family:aquire;
+    src:url(aquire.otf);
+}
+
+.brand{
+    font-size:60px;
+    display: inline-block;
+    font-family:aquire;
+}
+
+/* Footer Styling */
+.main-container{
+    margin: 20px;
+    padding: 20px;
+}
+
+.head {
+    display: flex;
+    width: 80%;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    background-image: radial-gradient(100% 100% at 100% 0, #CCFFFF 0, #7C68ED 100%);
+    line-height: 1.7em;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "JetBrains Mono",monospace;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.body {
+    display: flex;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    background-color: #CCFFFF;
+    width: 70%;
+    line-height: 1.7em;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.content p {
+    inline-size: 400px
+}
+
+.topic-container a{
+    color:#7C68ED;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.topic-container h1{
+    font-size   :   20px;
+    font-weight :   bolder;
+}
+
+.comment-container a{
+    color:#7C68ED;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.comment-container h1{
+    font-size   :   20px;
+    font-weight :   bolder;
+}
+
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color:  #52057b;
+    display: block;
+    text-align: center;
+}
+
+.head-authors{
+    flex: 30%;
+}
+
+.head-content{
+    flex: 70%;
+}
+
+.authors{
+    flex: 30%;
+}
+
+.content{
+    flex: 70%;
+}
+
+.body .authors .username{
+    font-size: 20px;
+}
+
+.body .authors img{
+    max-width: 120px;
+    max-height: 140px;
+}
+
+.comment button{
+    border          :   none;
+    padding-left    :   15px;
+    padding-right   :   15px;
+    height          :   35px;
+    font-weight     :   bolder;
+    box-shadow      :   rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    background-image:   radial-gradient(100% 100% at 100% 0, #CCFFFF 0, #7C68ED 100%);
+    cursor          :   pointer;
+    float           :   right;
+    color           :  white;
+}
+
+.comment button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+/* comment section */
+.comment-body {
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    background-color: #CCFFFF;
+    width: 45%;
+    line-height: 1.7em;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.comment-container form {
+    text-align: center;
+}
+
+.comment-container input[type=submit] {
+    border          :   none;
+    padding-left    :   15px;
+    padding-right   :   15px;
+    height          :   35px;
+    font-weight     :   bolder;
+    box-shadow      :   rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    background-image:   radial-gradient(100% 100% at 100% 0, #CCFFFF 0, #7C68ED 100%);
+    cursor          :   pointer;
+    color           :  white;
+}
+
+.comment-container textarea {
+    padding         : 4px 4px;
+    margin          : 7px;
+    box-sizing      : border-box;
+    outline         : none;
+}
+
+
+
